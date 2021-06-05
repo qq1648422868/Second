@@ -35,29 +35,31 @@ public class TeacherServiceBean implements TeacherService {
     //返回错误数组
     public List<String> errors(Teacher teacher) {
         List<String> errors = new ArrayList<>();
-        if (teacher.getId() == null || teacher.getId() > 1000 || teacher.getId() < 1) {
+        if (teacher.getId() == null ||
+                !teacher.getId().matches("^\\d{1,3}$") ||
+                !teacher.getId().matches("^[0-9]*$")) {
             errors.add("ID输入错误！");
         }
         if (teacher.getName() == null || teacher.getName().equals("") || teacher.getName().length() < 2) {
             errors.add("名字输入错误！");
         }
         if (teacher.getAge() == null || teacher.getAge() < 18 || teacher.getAge() > 60) {
-            errors.add("年龄错误");
+            errors.add("年龄不能为空");
         }
         if (teacher.getSex() == null) {
-            errors.add("性别错误");
+            errors.add("性别不能为空");
         }
         if ((Calendar.getInstance().get(Calendar.YEAR) - (teacher.getBirth().getYear() + 1900)) != teacher.getAge()) {
             errors.add("年龄与出生不符合");
         }
-        if (!(teacher.getSalary() instanceof Integer)) {
+        if (!teacher.getSalary().matches("^[0-9]*$")) {
             errors.add("薪水错误（必须为数字）");
         }
-        if (!(teacher.getPhone() instanceof Integer)) {
-            errors.add("电话错误（必须为数字且长度为11）");
+        if (!teacher.getPhone().matches("^[0-9]*$")) {
+            errors.add("电话错误必须为数字）");
         }
         if (teacher.getId_no() == null ||
-                teacher.getId_no().length() != 18 ||
+                teacher.getId_no().matches("^\\d{18}$") ||
                 !(teacher.getId_no().substring(6, 10).equals((teacher.getBirth().getYear() + 1900) + ""))
         ) {
             errors.add("身份证格式错误");

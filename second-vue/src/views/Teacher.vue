@@ -144,7 +144,7 @@
           </el-date-picker>
         </el-form-item>
         <el-form-item label="薪水" :label-width="formLabelWidth" prop="salary">
-          <el-input v-model.number="form.salary" autocomplete="off"></el-input>
+          <el-input v-model="form.salary" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="籍贯" :label-width="formLabelWidth" prop="origin">
           <el-input
@@ -155,7 +155,7 @@
           </el-input>
         </el-form-item>
         <el-form-item label="电话" :label-width="formLabelWidth" prop="phone">
-          <el-input v-model.number="form.phone" placeholder="11位整数" autocomplete="off"></el-input>
+          <el-input v-model="form.phone" placeholder="11位整数" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="身份证" :label-width="formLabelWidth" prop="id_no">
           <el-input v-model="form.id_no" placeholder="18位" autocomplete="off"></el-input>
@@ -265,7 +265,6 @@ export default {
           {
             type:'number',
             required: true,
-
             message: '请输入正确的手机号码',
             trigger: 'blur'
           }

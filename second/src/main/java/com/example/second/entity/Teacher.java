@@ -4,7 +4,7 @@ import java.util.Date;
 public class Teacher {
     private Long uid;
 
-    private Integer id;
+    private String id;
 
     private String name;
 
@@ -18,11 +18,11 @@ public class Teacher {
 
     private Date birth;
 
-    private Integer salary;
+    private String salary;
 
     private String origin;
 
-    private Integer phone;
+    private String phone;
 
     private String id_no;
 
@@ -38,11 +38,11 @@ public class Teacher {
         this.uid = uid;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -90,11 +90,11 @@ public class Teacher {
         this.birth = birth;
     }
 
-    public Integer getSalary() {
+    public String getSalary() {
         return salary;
     }
 
-    public void setSalary(Integer salary) {
+    public void setSalary(String salary) {
         this.salary = salary;
     }
 
@@ -114,11 +114,11 @@ public class Teacher {
         this.hobby = hobby;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
