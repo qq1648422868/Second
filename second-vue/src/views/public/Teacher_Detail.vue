@@ -64,13 +64,55 @@
         <div id="app">
           <p style="font-size: 30px; color: #0f4983;">教师基本信息</p>
           <br>
-          <li v-for="(item,i) in teachers" style="font-size: 14px">
-            姓名：{{item.name}} 年龄：{{item.age}} 性别：{{item.sex}} 学校：{{item.school}} 专业{{item.major}} 电话：{{item.phone}} 邮箱：{{item.email}}
-            <br>
-            <br>
-          </li>
+          <el-table
+              :data="teachers"
+              style="width: 100%">
+            <el-table-column
+                prop="id"
+                label="ID"
+                width="50">
+            </el-table-column>
+            <el-table-column
+                prop="name"
+                label="姓名"
+                width="70">
+            </el-table-column>
+            <el-table-column
+                prop="age"
+                label="年龄"
+                width="60">
+            </el-table-column>
+            <el-table-column
+                prop="sex"
+                label="性别"
+                width="60">
+            </el-table-column>
+            <el-table-column
+                prop="school"
+                label="学校"
+                width="110">
+            </el-table-column>
+            <el-table-column
+                prop="major"
+                label="专业"
+                width="100">
+            </el-table-column>
+            <el-table-column
+                prop="phone"
+                label="电话"
+                width="100">
+            </el-table-column>
+            <el-table-column
+                prop="email"
+                label="邮箱"
+                width="120">
+            </el-table-column>
+          </el-table>
 
         </div>
+
+
+
         <ul class="wp_paging clearfix">
           <li class="pages_count">
             <span class="per_page">每页&nbsp;<em class="per_count">14</em>&nbsp;记录&nbsp;</span>
@@ -82,6 +124,7 @@
             <a class="next" href="javascript:void(0);" target="_self"><span>下一页&gt;&gt;</span></a>
             <a class="last" href="javascript:void(0);" target="_self"><span>尾页</span></a>
           </li>
+
 
           <li class="page_jump">
             <span class="pages">页码&nbsp;<em class="curr_page">1</em>/<em class="all_pages">1</em></span>
@@ -108,7 +151,23 @@ export default {
   components: {},
   data() {
     return {
-      teachers:[]
+      teachers:[],
+      form: {
+        id:'',
+        name: '',
+        age: '',
+        sex: '',
+        school:'',
+        major:'',
+        birth:'',
+        salary:'',
+        origin:'',
+        phone:'',
+        id_no:'',
+        email:'',
+        hobby:'',
+        hobbies:[]
+      },
     }
   },
   created() {

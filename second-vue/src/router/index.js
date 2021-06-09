@@ -19,6 +19,8 @@ import Course_Building from "@/views/public/Course_Building";
 import Course_ItemTeaching from "@/views/public/Course_ItemTeaching";
 import Course_TeachingMethod from "@/views/public/Course_TeachingMethod";
 import Course_Outline from "@/views/public/Course_Outline";
+import Course_Source from "@/views/public/Course_Source";
+import Course_Video from "@/views/public/Course_Video";
 
 
 Vue.use(VueRouter);
@@ -62,8 +64,20 @@ const routes = [
             },
             {
                 path: '/outline',
-                name: '教学方法',
+                name: '教学大纲',
                 component: Course_Outline,
+                hidden: true,
+            },
+            {
+                path: '/source',
+                name: '教学资源',
+                component: Course_Source,
+                hidden: true,
+            },
+            {
+                path: '/video',
+                name: '教学视频',
+                component: Course_Video,
                 hidden: true,
             },
             {

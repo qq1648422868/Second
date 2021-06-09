@@ -330,7 +330,6 @@ export default {
         sex: '',
         school:'',
         major:'',
-
         birth:'',
         salary:'',
         origin:'',

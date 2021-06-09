@@ -1,5 +1,5 @@
 <template>
-
+  <div><p style="font-size: 30px;color: red">Waiting for updating</p></div>
 </template>
 
 <script>

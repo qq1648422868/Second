@@ -12,7 +12,7 @@
           </p>
           <div class="article">
 
-            <div class="wp_articlecontent"><p><img data-layer="photo" src="../../assets/mimaji.jpg" style="float:none;" sudyfile-attr="{'title':'密码机1.jpg'}"></p><p><br></p></div>
+            <div class="wp_articlecontent"><p><img data-layer="photo" src="../../assets/jiegoutu2.png" style="float:none;width: 500px;height: 500px" sudyfile-attr="{'title':'密码机1.jpg'}"></p><p><br></p></div>
           </div>
 
         </div>

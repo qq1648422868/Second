@@ -15,7 +15,7 @@
               <table ifrag="栏目" level="0" border="0" cellpadding="0" cellspacing="0" class="tbl_columnlist">
                 <tbody>
                 <tr ifrag="栏目属性">
-                  <td class="tbl_columnlist_name" ifrag="栏目名称"><a href="/#/condition" title="团队教学">团队教学</a></td>
+                  <td class="tbl_columnlist_name" ifrag="栏目名称"><a href="/#/method" >教学方法</a></td>
                 </tr>
                 <tr ifrag="子栏目列表">
                   <td>
@@ -36,7 +36,7 @@
             <div frag="窗口14" portletmode="columnPath">
               <img src="../../assets/addres.jpg" height="10" width="10"><a href="/#/public" target="_self">首页</a>
               <span class="possplit">&nbsp;&nbsp;</span>
-              <a href="/#/condition" target="_self">团队教学</a>
+              <a href="/#/method" target="_self">教学方法</a>
             </div>
           </div>
         </div>
